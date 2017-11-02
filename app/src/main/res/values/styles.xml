@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colo</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@drawable/header_shape</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="tableHeaderText">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/header_shape_white</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="tableText">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/header_shape</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colo</item>
+        <item name="tabSelectedTextColor">@color/colo</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+    </style>
+    <!-- Text appearance style for a category tab -->
+    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="titleText">
+        <item name="android:textAppearanceLarge">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="subTitleText">
+        <item name="android:textAppearanceLarge">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="normalText">
+        <item name="android:textAppearanceLarge">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="spinner">
+        <item name="android:background">@drawable/header_shape</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="editText">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:inputType">text|textImeMultiLine</item>
+        <item name="android:maxLines">1</item>
+    </style>
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_cons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tense_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            style="@style/titleText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tense_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            style="@style/normalText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tense_name" />
+
+        <TextView
+            android:id="@+id/text_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Conjucating for the Regular verbs"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tense_details"
+            style="@style/subTitleText"/>
+
+        <FrameLayout
+            android:id="@+id/main_frame_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="105dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_reg">
+
+            <include
+                layout="@layout/table_header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <ViewStub
+            android:id="@+id/frame_layout_ex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="3dp"
+            tools:layout_editor_absoluteY="81dp"
+            tools:layout_editor_absoluteX="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_reg"
+            android:paddingTop="8dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tense_main_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingRight="103dp"
+            app:layout_constraintBottom_toBottomOf="@+id/main_frame_layout"
+            app:layout_constraintLeft_toRightOf="@+id/main_frame_layout"
+            app:layout_constraintTop_toBottomOf="@+id/text_reg" />
+
+
+        <TextView
+            android:id="@+id/text_reg_ex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/main_frame_layout"
+            app:layout_constraintBottom_toBottomOf="@+id/main_frame_layout"
+            app:layout_constraintLeft_toRightOf="@+id/tense_main_table"
+            style="@style/subTitleText"
+            android:textAlignment="center"
+            android:layout_marginStart="2dp" />
+
+        <TextView
+            android:id="@+id/text_irr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Conjucating for some Irregular verbs"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_frame_layout"
+            style="@style/subTitleText"/>
+
+        <FrameLayout
+            android:id="@+id/irr_frame_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_irr"
+            android:paddingBottom="2dp">
+
+            <include
+                layout="@layout/table_header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tense_irr_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingRight="103dp"
+            app:layout_constraintLeft_toRightOf="@+id/irr_frame_layout"
+            app:layout_constraintTop_toBottomOf="@+id/text_irr"
+            android:paddingBottom="2dp"
+            android:drawSelectorOnTop="true"
+            android:listSelector="@android:drawable/list_selector_background"/>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

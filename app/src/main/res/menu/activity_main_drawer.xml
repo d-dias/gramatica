@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search"
+            android:title="Search" />
+        <item
+            android:id="@+id/nav_newVerb"
+            android:icon="@drawable/ic_add"
+            android:title="New verb" />
+        <item
+            android:id="@+id/nav_allVerbs"
+            android:icon="@drawable/ic_list"
+            android:title="All verbs" />
+        <item
+            android:id="@+id/nav_allTenses"
+            android:icon="@drawable/ic_list"
+            android:title="All Tenses" />
+    </group>
+
+    <item android:title="Grammar">
+        <menu>
+            <item
+                android:id="@+id/nav_gra_verbs"
+                android:title="Verbs" />
+            <item
+                android:id="@+id/nav_gra_tenses"
+                android:title="Tenses" />
+        </menu>
+    </item>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_set_preferences"
+                android:title="Preferences" />
+            <item
+                android:id="@+id/nav_set_deleteAllVerbs"
+                android:title="Delete all Verbs" />
+            <item
+                android:id="@+id/nav_set_default"
+                android:title="Set default data" />
+        </menu>
+    </item>
+
+</menu>

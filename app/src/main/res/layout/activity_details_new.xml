@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/details_main_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingBottom="8dp"
+            tools:text="TextView"
+            style="@style/titleText"/>
+
+        <!--<Spinner-->
+            <!--android:id="@+id/details_spinner"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:entries="@array/editor_list"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/details_main_text"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/details_main_text" />-->
+
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_main_text"
+            android:layout_marginTop="100dp">
+
+            <include
+                layout="@layout/table_header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/details_main_text"
+            app:layout_constraintLeft_toRightOf="@+id/frame_layout"
+            android:paddingRight="103dp"
+            android:drawSelectorOnTop="true"
+            android:listSelector="@android:drawable/list_selector_background"/>
+
+            <!--<GridView-->
+                <!--android:id="@+id/details_gridView"-->
+                <!--android:layout_width="270dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/header_shape"-->
+                <!--android:columnWidth="100dp"-->
+                <!--android:gravity="center"-->
+                <!--android:numColumns="6"-->
+                <!--android:stretchMode="none" />-->
+        <!--</android.support.v7.widget.RecyclerView>-->
+
+        <!--<HorizontalScrollView-->
+        <!--android:id="@+id/details_scroll_h"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/frame_layout"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/details_spinner">-->
+
+        <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/details_label_presente"-->
+        <!--style="@style/tableHeaderText"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:text="@string/presente_do_indicativo_present_tense"-->
+        <!--android:textSize="12sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/details_label_p_p_s"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/details_label_p_p_s"-->
+        <!--style="@style/tableHeaderText"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:text="@string/pret_rito_perfeito_simples_past_tense"-->
+        <!--android:textSize="12sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/details_label_p_i_s"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/details_label_presente"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/details_label_presente" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/details_label_p_i_s"-->
+        <!--style="@style/tableHeaderText"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:text="@string/pret_rito_imperfeito_simples_past_tense"-->
+        <!--android:textSize="12sp"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/details_label_p_p_s"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/details_label_p_p_s" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/details_label_futuro"-->
+        <!--style="@style/tableHeaderText"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:text="@string/futuro_imperfeito_future_tense"-->
+        <!--android:textSize="12sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/details_label_p_i_s"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/details_label_p_i_s"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/details_label_p_i_s" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/details_label_p_m_q_p_c"-->
+        <!--style="@style/tableHeaderText"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:text="@string/preterito_mais_que_perfeito_composto"-->
+        <!--android:textSize="12sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/details_label_futuro"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/details_label_futuro"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/details_label_futuro" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/details_label_p_p_c"-->
+        <!--style="@style/tableHeaderText"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:text="@string/preterito_perfeito_composto"-->
+        <!--android:textSize="12sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/details_label_p_m_q_p_c"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/details_label_p_m_q_p_c"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/details_label_p_m_q_p_c" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/details_label"-->
+        <!--style="@style/tableHeaderText"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:text="@string/preterito_perfeito_composto"-->
+        <!--android:textSize="12sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/details_label_p_p_c"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/details_label_p_p_c"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/details_label_p_p_c" />-->
+
+        <!--<GridView-->
+        <!--android:id="@+id/details_gridView"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="250dp"-->
+        <!--android:background="@drawable/header_shape"-->
+        <!--android:columnWidth="100dp"-->
+        <!--android:gravity="center"-->
+        <!--android:horizontalSpacing="0dp"-->
+        <!--android:numColumns="6"-->
+        <!--android:stretchMode="columnWidth"-->
+        <!--android:verticalSpacing="0dp"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/details_label_presente"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/details_label"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/details_label_p_p_s">-->
+
+        <!--</GridView>-->
+        <!--</android.support.constraint.ConstraintLayout>-->
+        <!--</HorizontalScrollView>-->
+    </android.support.constraint.ConstraintLayout>
+    </ScrollView>

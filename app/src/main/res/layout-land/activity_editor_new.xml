@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <FrameLayout
+        android:id="@+id/edit_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingRight="8dp">
+        <include
+            layout="@layout/edit_layout_table"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/edit_main_por"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Verb        :  "
+        style="@style/titleText"
+        app:layout_constraintLeft_toRightOf="@+id/edit_frame"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_verb_por"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:hint="Enter verb here"
+        style="@style/titleText"
+        app:layout_constraintTop_toBottomOf="@+id/edit_main_por"
+        app:layout_constraintLeft_toRightOf="@+id/edit_frame" />
+
+
+    <TextView
+        android:id="@+id/edit_main_eng"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Meaning :  "
+        style="@style/titleText"
+        app:layout_constraintTop_toBottomOf="@+id/edit_verb_por"
+        app:layout_constraintLeft_toRightOf="@+id/edit_frame"/>
+
+    <EditText
+        android:id="@+id/edit_verb_eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:hint="Enter meaning here"
+        style="@style/titleText"
+        app:layout_constraintLeft_toRightOf="@+id/edit_frame"
+        app:layout_constraintTop_toBottomOf="@+id/edit_main_eng" />
+
+</android.support.constraint.ConstraintLayout>

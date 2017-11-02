@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/tableHeaderText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="infinitive"
+            style="@style/tableHeaderText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="gerúndio"
+            style="@style/tableHeaderText"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-ar"
+            style="@style/tableHeaderText"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="falar -r"
+            style="@style/tableHeaderText"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="fala + ndo"
+            style="@style/tableText"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-er"
+            style="@style/tableHeaderText"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="comer -r"
+            style="@style/tableHeaderText"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="come + ndo"
+            style="@style/tableText"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-ir"
+            style="@style/tableHeaderText"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abrir -r"
+            style="@style/tableHeaderText"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="abri + ndo"
+            style="@style/tableText"/>
+    </LinearLayout>
+</LinearLayout>

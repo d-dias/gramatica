@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/editView"
+        android:title="View Tense"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/editFillup"
+        android:title="Fill up using regular theory."
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/editClear"
+        android:title="Clear"
+        app:showAsAction="never"/>
+</menu>

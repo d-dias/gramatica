@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <Spinner
+        android:id="@+id/edit_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/editor_list"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/edit_frame_table"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="3dp"
+        android:background="@drawable/header_shape_white"
+        android:popupTheme="@style/spinner"/>
+
+    <ScrollView
+        android:id="@+id/edit_frame_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_spinner"
+        android:layout_marginTop="5dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="45dp">
+
+        <include
+            layout="@layout/table_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</ScrollView>
+    <FrameLayout
+        android:id="@+id/edit_frame_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/edit_frame_header"
+        app:layout_constraintTop_toBottomOf="@+id/edit_spinner"
+        android:layout_marginTop="5dp">
+
+        <include
+            layout="@layout/editor_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

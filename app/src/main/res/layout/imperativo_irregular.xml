@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                style="@style/tableHeaderText"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:text="singular" />
+
+            <TextView
+                style="@style/tableHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="plural" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                style="@style/tableHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="informal" />
+            <TextView
+                style="@style/tableHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="formal" />
+            <TextView
+                style="@style/tableHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="informal\nand formal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                style="@style/tableHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="affirmative" />
+            <TextView
+                style="@style/tableHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="negative" />
+
+            <TextView
+                style="@style/tableHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="affirmative\nand negative" />
+
+            <TextView
+                style="@style/tableHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="affirmative\nand negative" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/imperativo_recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:listSelector="@android:drawable/list_selector_background"/>
+</LinearLayout>

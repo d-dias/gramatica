@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/textEu"
+        style="@style/tableHeaderText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/eu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTu"
+        style="@style/tableHeaderText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/tu"
+        app:layout_constraintLeft_toLeftOf="@+id/textEu"
+        app:layout_constraintRight_toRightOf="@+id/textEu"
+        app:layout_constraintTop_toBottomOf="@+id/textEu" />
+
+    <TextView
+        android:id="@+id/textEleEla"
+        style="@style/tableHeaderText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/ele_a_vôce"
+        app:layout_constraintLeft_toLeftOf="@+id/textTu"
+        app:layout_constraintRight_toRightOf="@+id/textTu"
+        app:layout_constraintTop_toBottomOf="@+id/textTu" />
+
+    <TextView
+        android:id="@+id/textNos"
+        style="@style/tableHeaderText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/nós"
+        app:layout_constraintLeft_toLeftOf="@+id/textEleEla"
+        app:layout_constraintRight_toRightOf="@+id/textEleEla"
+        app:layout_constraintTop_toBottomOf="@+id/textEleEla" />
+
+    <TextView
+        android:id="@+id/textElesElas"
+        style="@style/tableHeaderText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/eles_as_vôces"
+        app:layout_constraintLeft_toLeftOf="@+id/textNos"
+        app:layout_constraintRight_toRightOf="@+id/textNos"
+        app:layout_constraintTop_toBottomOf="@+id/textNos" />
+
+</android.support.constraint.ConstraintLayout>

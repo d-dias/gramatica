@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        style="@style/tableHeaderText" />
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        style="@style/tableText"
+        android:inputType="text"
+        android:maxLines="1"/>
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        style="@style/tableText"
+        android:inputType="text"
+        android:maxLines="1"/>
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        style="@style/tableText"
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        style="@style/tableText"
+        android:inputType="text"
+        android:maxLines="1"/>
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        style="@style/tableText"
+        android:inputType="text"
+        android:maxLines="1"
+        />
+</LinearLayout>

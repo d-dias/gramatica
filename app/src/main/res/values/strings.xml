@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Gramatica</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="no_meaning">No meaning</string>
+    <string name="failed_to_insert_the_verb">Failed to insert the verb</string>
+    <string name="successfully_insert_the_verb">Successfully insert the verb.</string>
+    <string name="delete_all_verbs_failed">Delete all verbs failed</string>
+    <string name="successfully_delete_all_verbs">Successfully deleted all verbs</string>
+    <string name="delete_all">Delete all</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_all_verbs_msg">After delete you can\'t undo this action. Your all verbs will be deleted.</string>
+    <string name="delete_verb">This verb will be deleted. Cant\'t undo this action.</string>
+    <string name="delete_word">This word will be deleted. Cant\'t undo this action.</string>
+    <string name="delete">Delete</string>
+    <string name="delete_verb_failed">Failed to delete verb</string>
+    <string name="delete_verb_successfully">Successfully delete the verb</string>
+    <string name="unsaved_changes_msg">You have unsaved changes. Leave without saving?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep editing</string>
+    <string name="add_verb_to_save">Add verb to save</string>
+    <string name="leave_without_saving">Leave witout saving</string>
+    <string name="save">Save</string>
+    <string name="eu">Eu</string>
+    <string name="tu">Tu</string>
+    <string name="ele_a_vôce">Ele(a)\\Vôce</string>
+    <string name="nós">Nós</string>
+    <string name="eles_as_vôces">Eles(as)\\Vôces</string>
+    <string name="presente_do_indicativo_present_tense">Presente do indicativo (Present tense)</string>
+    <string name="pret_rito_perfeito_simples_past_tense">Pretérito perfeito simples (Past tense)</string>
+    <string name="pret_rito_imperfeito_simples_past_tense">Pretérito imperfeito simples (Past tense)</string>
+    <string name="futuro_imperfeito_future_tense">Futuro imperfeito (Future tense)</string>
+    <string name="preterito_mais_que_perfeito_composto">Preterito mais-que perfeito composto</string>
+    <string name="preterito_perfeito_composto">Preterito perfeito composto</string>
+    <string name="search_hint">Search verb</string>
+    <string-array name="editor_list">
+        <item>Presente do indicativo\n(Present tense)</item>
+        <item>Pretérito perfeito simples\n(Past tense)</item>
+        <item>Pretérito imperfeito simples\n(Past tense)</item>
+        <item>Futuro imperfeito\n(Future tense)</item>
+        <item>Preterito mais-que perfeito composto</item>
+        <item>Preterito perfeito composto</item>
+    </string-array>
+
+    <string name="category_verbs">Verbs</string>
+    <string name="category_tenses">Tenses</string>
+    <string name="delete_word_failed">Failed to delete word.</string>
+    <string name="delete_word_successfully">Successfully delete the word.</string>
+    <string name="category_words">Words</string>
+    <string name="delete_all_msg">After delete you can\'t undo this action. Your all data will be deleted.</string>
+    <string name="delete_all_verbs">Delete all verbs</string>
+    <string name="verb_is_already_entered_msg">This verb is already entered. Use search to find the verb</string>
+    <string name="failed_to_update_verb">Failed to update verb.</string>
+    <string name="successfully_updated_verb">Successfully updated verb.</string>
+    <string name="no_changes_to_update">No changes to update.</string>
+
+    <string-array name="search_spinner">
+        <item>Search on verbs</item>
+        <item>Search on tenses</item>
+    </string-array>
+
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="sign_up_button_label">Sign Up</string>
+    <string name="signup_error_message">Please make sure you enter an email address and password!</string>
+    <string name="signup_error_title">Error!</string>
+    <string name="signup_success">Account successfully created! You can now Login.</string>
+    <string name="login_error_message">Please make sure you enter an email address and password!</string>
+    <string name="login_error_title">Error!</string>
+    <string name="login_button_label">Login</string>
+    <string name="sign_up_text">Sign Up!</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="add_item">Add New Item</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="icon">Let\'s admit it: we\'re not Shakespeare :) Therefore, you\'re welcome to write your text and link it to https://icons8.com/icon/9108/Paper-Filled</string>
+    <string name="condicional_presente_conditional_tense">Condicional presente (Conditional tense)</string>
+    <string name="gerundio_simples">Gerúndio Simples</string>
+    <string name="imperativo_afirmativa">Imperativo Afirmativa</string>
+</resources>
